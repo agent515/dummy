@@ -40,7 +40,7 @@ abstract final class DioClient {
         ),
       // Keeps full requests and responses in memory for the in-app console;
       // nothing is printed.
-      if (kDebugMode) LogarteDioInterceptor(logarte),
+      LogarteDioInterceptor(logarte),
     ]);
     return dio;
   }

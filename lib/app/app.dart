@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logarte/logarte.dart';
@@ -20,9 +19,7 @@ class _AppState extends State<App> {
   final _authBloc = getIt<AuthBloc>();
   final _router = getIt<AppRouter>();
   late final _routerConfig = _router.config(
-    navigatorObservers: () => [
-      if (kDebugMode) LogarteButtonObserver(getIt<Logarte>()),
-    ],
+    navigatorObservers: () => [LogarteButtonObserver(getIt<Logarte>())],
   );
 
   @override
