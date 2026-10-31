@@ -6,7 +6,7 @@ abstract final class ApiConstants {
   static const receiveTimeout = Duration(seconds: 20);
 
   /// Lifetime requested for access tokens on login and refresh.
-  static const tokenExpiresInMins = 30;
+  static const tokenExpiresInMins = 10;
 
   static const productsPageSize = 20;
 }
