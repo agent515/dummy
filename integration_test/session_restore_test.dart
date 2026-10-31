@@ -27,7 +27,7 @@ void main() {
     await binding.takeScreenshot('06-account-menu');
     await tester.tap(find.text('Sign out'));
     await pumpUntilFound(tester, find.text('Sign out?'));
-    await tester.tap(find.widgetWithText(FilledButton, 'Sign out'));
+    await tester.tap(find.widgetWithText(FilledButton, 'Confirm'));
 
     await pumpUntilFound(tester, find.text('Welcome back'));
     expect(await getIt<TokenStorage>().hasSession(), isFalse);

@@ -62,7 +62,7 @@ void main() {
         username: 'emilys',
         password: 'emilyspass',
       ).toJson(),
-      {'username': 'emilys', 'password': 'emilyspass', 'expiresInMins': 30},
+      {'username': 'emilys', 'password': 'emilyspass', 'expiresInMins': 10},
     );
   });
 }
